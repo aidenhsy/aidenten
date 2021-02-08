@@ -21,11 +21,13 @@ export default function Home() {
         <title>Aiden's Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Posts</h1>
+      <h1 className="text-3xl font-semibold tracking-wide mt-6 mb-8">Posts</h1>
       {posts.map((post, index) => (
         <Link key={index} href={`/posts/${post.id}`}>
-          <div>
-            <h2>{post.title}</h2>
+          <div className="my-6 pb-6 border-b border-gray-300">
+            <div className="cursor-pointer mt-2">
+              <h2 className="text-xl font-semibold">{post.title}</h2>
+            </div>
           </div>
         </Link>
       ))}
