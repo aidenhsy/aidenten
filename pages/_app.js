@@ -6,6 +6,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <nav>
+        <Link href="/">
+          <a>Home</a>
+        </Link>
         <Link href="/profile">
           <a>Profile</a>
         </Link>
